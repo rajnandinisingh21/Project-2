@@ -2,57 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tribute to Swami Vivekananda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Blog</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div>
+        <h2>Pantera<span>.</span></h2>
+        <p>Creative Blog Template</p>
+        <nav>
+          <ul>
+            <li><a href="#">Homepages</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Posts</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="social-icons">
+        <a href="#">FB</a>
+        <a href="#">TW</a>
+        <a href="#">IG</a>
+        <a href="#">IN</a>
+      </div>
+    </aside>
 
-  <!-- Header -->
-  <header class="header">
-    <h1>Swami Vivekananda</h1>
-    <p>"Arise! Awake! and stop not until the goal is reached."</p>
-  </header>
+    <!-- Main Content -->
+    <main>
+      <header class="top-header">
+        <h1>Our Stories</h1>
+        <input type="text" id="searchBar" placeholder="Enter your keyword..." onkeyup="filterPosts()" />
+      </header>
 
-  <!-- About Section -->
-  <section class="about">
-    <img src="https://i0.wp.com/vivekananda.live/eshop/wp-content/uploads/2022/02/021-SV.jpg?fit=432%2C576&ssl=1" alt="Swami Vivekananda">
-    <div class="about-text">
-      <h2>About</h2>
-      <p>
-        Swami Vivekananda was a lion-hearted monk, a messenger of Indian spirituality, and a torchbearer of universal wisdom. With his powerful words and fearless spirit, he awakened the soul of a nation and inspired the world to see the unity of all religions. A symbol of courage, compassion, and enlightenment, he taught us to “Arise, awake, and stop not till the goal is reached.”
-      </p>
-    </div>
-  </section>
+      <div class="content-area">
+        <!-- Posts Grid -->
+        <section class="posts">
+          <div class="post-card">
+            <img src="https://thumbs.dreamstime.com/b/silhouette-plane-f…uette-plane-flying-beautiful-sunset-114024191.jpg" alt="Post 1">
+            <span class="category">Travel</span>
+            <h2>Discover Your Inner Genius To Better</h2>
+            <p>BY: ERWIN JONSON | MAR 23, 2021 | 62 VIEWS</p>
+            <p>Learn how to unlock your potential through guided learning...</p>
+          </div>
+          <div class="post-card">
+            <img src="https://miro.medium.com/v2/resize:fit:1200/1*jdDqOtbAhmdJ6DSXeH1iqg.jpeg" alt="Post 2">
+            <span class="category">Thinking</span>
+            <h2>Read This To Change How You Mind</h2>
+            <p>BY: ERWIN JONSON | MAR 23, 2021 | 51 VIEWS</p>
+            <p>Explore mental frameworks that improve focus and creativity.</p>
+          </div>
+          <div class="post-card">
+           <img src="https://geediting.com/wp-content/uploads/2024/06/highly-intelligent.png" alt="Post 3">
 
-  <!-- Qualities Section -->
-  <section class="qualities">
-    <h2>Admirable Qualities</h2>
-    <ul>
-      <li>🧠 Profound Spiritual Wisdom</li>
-      <li>🗣️ Powerful Oratory Skills</li>
-      <li>🌍 Visionary Thinker</li>
-      <li>🕊️ Advocate of Peace & Unity</li>
-      <li>🔥 Motivator of Youth</li>
-      <li>📚 Lifelong Learner</li>
-    </ul>
-  </section>
+            <span class="category">Thinking</span>
+            <h2>Smart People Think To Get Ahead</h2>
+            <p>BY: ERWIN JONSON | MAR 23, 2021 | 51 VIEWS</p>
+            <p>Critical thinking and smart work tips to boost career success.</p>
+          </div>
+          <div class="post-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSar-d4KecZ-_FHXTMUcBlCDQnQfFoVuyquxA&s" alt="Post 4">
+            <span class="category">Thinking</span>
+            <h2>One Simple Word To Success</h2>
+            <p>BY: ERWIN JONSON | MAR 23, 2021 | 45 VIEWS</p>
+            <p>Discover the one mindset shift that leads to big change.</p>
+          </div>
+        </section>
 
-  <!-- Gallery -->
-  <section class="gallery">
-    <h2>Gallery</h2>
-    <div class="images">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6xtt5Ab5dbw_92HIpyfrar2sgUIy6AvNvoA&s" alt="Speech in Chicago">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhu4zzBhyzwutict_IBC-bvesb-dBDCWpP2w&s" alt="Portrait">
-      <img src="https://samsshopping.com/wp-content/uploads/2021/12/MC-178.jpg" alt="In Kolkata">
-    </div>
-  </section>
+        <!-- Right Sidebar -->
+        <aside class="rightbar">
+          <div class="popular-post">
+            <h3>Popular Posts</h3>
+            <div class="mini-post">
+              <img src="https://thumbs.dreamstime.com/b/silhouette-plane-f…uette-plane-flying-beautiful-sunset-114024191.jpg" alt="Popular">
+              <div>
+                <p>MAR 23, 2021</p>
+                <strong>Discover Your Inner Genius To Better</strong>
+              </div>
+            </div>
+          </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>In admiration of a great soul | &copy; 2025 Tribute by Rajnandini</p>
-  </footer>
+          <div class="recent-posts">
+            <h3>Recent Posts</h3>
+            <ul>
+              <li>Discover Your Inner Genius To Better</li>
+              <li>Read This To Change How You Mind</li>
+              <li>Smart People Think To Get Ahead</li>
+              <li>One Simple Word To Success</li>
+              <li>How To Improve The Way You Skills</li>
+            </ul>
+          </div>
 
+          <div class="categories">
+            <h3>Categories</h3>
+            <ul>
+              <li>All (50)</li>
+              <li>Travel (12)</li>
+              <li>Lifestyle (20)</li>
+              <li>Thinking (18)</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

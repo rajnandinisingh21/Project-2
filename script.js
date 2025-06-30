@@ -1,39 +1,16 @@
-const display = document.getElementById("display");
+// script.js
+function filterPosts() {
+  const input = document.getElementById("searchBar").value.toLowerCase();
+  const posts = document.querySelectorAll(".post-card");
 
-function appendNumber(num) {
-  if (display.textContent === "0") {
-    display.textContent = num;
-  } else {
-    display.textContent += num;
-  }
-}
+  posts.forEach(post => {
+    const title = post.querySelector("h2").textContent.toLowerCase();
+    const content = post.querySelectorAll("p")[1].textContent.toLowerCase();
 
-function appendOperator(op) {
-  const lastChar = display.textContent.slice(-1);
-  if ("+-*/".includes(lastChar)) {
-    display.textContent = display.textContent.slice(0, -1) + op;
-  } else {
-    display.textContent += op;
-  }
-}
-
-function clearDisplay() {
-  display.textContent = "0";
-}
-
-function deleteChar() {
-  if (display.textContent.length > 1) {
-    display.textContent = display.textContent.slice(0, -1);
-  } else {
-    display.textContent = "0";
-  }
-}
-
-function calculateResult() {
-  try {
-    const result = eval(display.textContent);
-    display.textContent = Number(result.toFixed(2)); // Limit to 2 decimals
-  } catch {
-    display.textContent = "Error";
-  }
+    if (title.includes(input) || content.includes(input)) {
+      post.style.display = "block";
+    } else {
+      post.style.display = "none";
+    }
+  });
 }

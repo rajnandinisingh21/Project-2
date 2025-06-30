@@ -6,24 +6,24 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
   color: #333;
+  background-color: #fff;
 }
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
 }
 
 /* Header */
 .header {
-  background-color: #fff;
+  background: #fff;
   padding: 20px 0;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 100;
 }
 
 .logo {
@@ -40,7 +40,11 @@ body {
 .nav-links a {
   text-decoration: none;
   color: #333;
-  font-weight: bold;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #ff69b4;
 }
 
 .header .container {
@@ -49,7 +53,7 @@ body {
   align-items: center;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
   background: #fff0f5;
   padding: 60px 0;
@@ -57,12 +61,13 @@ body {
 
 .hero-content {
   display: flex;
-  gap: 40px;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.hero-content img {
-  max-width: 400px;
+.hero img {
+  width: 300px;
   border-radius: 10px;
 }
 
@@ -72,46 +77,85 @@ section {
   text-align: center;
 }
 
-.about, .contact {
-  background-color: #f9f9f9;
-}
-
-.services {
-  background-color: #fffaf0;
-}
-
-.service-cards {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-}
-
-.card {
-  background: #fff;
-  padding: 20px;
-  width: 30%;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
-  font-size: 18px;
-}
-
-/* Gallery */
-.gallery .images {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+/* About */
+.about-img {
+  width: 150px;
+  border-radius: 50%;
   margin-top: 20px;
 }
 
-.gallery img {
-  width: 30%;
+.about p {
+  max-width: 700px;
+  margin: 20px auto;
+  font-size: 16px;
+}
+
+/* Skills */
+.skill-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skill-list li {
+  background: #ffe4ec;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* Projects */
+.project-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: #fff;
   border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  padding-bottom: 15px;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.project-card h4 {
+  padding-top: 10px;
+}
+
+/* Resume */
+.btn {
+  background-color: #ff69b4;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #e35d9e;
+}
+
+/* Contact */
+.contact p {
+  font-size: 18px;
+  margin: 10px 0;
 }
 
 /* Footer */
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #333;
+  background: #333;
   color: white;
+  padding: 20px 0;
+  text-align: center;
 }

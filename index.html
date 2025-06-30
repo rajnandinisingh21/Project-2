@@ -2,113 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Modern Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Management Tool</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <div>
-        <h2>Pantera<span>.</span></h2>
-        <p>Creative Blog Template</p>
-        <nav>
-          <ul>
-            <li><a href="#">Homepages</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Posts</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="social-icons">
-        <a href="#">FB</a>
-        <a href="#">TW</a>
-        <a href="#">IG</a>
-        <a href="#">IN</a>
-      </div>
-    </aside>
+    <h1>📋 Project Management Tool</h1>
 
-    <!-- Main Content -->
-    <main>
-      <header class="top-header">
-        <h1>Our Stories</h1>
-        <input type="text" id="searchBar" placeholder="Enter your keyword..." onkeyup="filterPosts()" />
-      </header>
+    <div class="form">
+      <input type="text" id="projectName" placeholder="Project Name" />
+      <input type="text" id="projectDesc" placeholder="Project Description" />
+      <input type="date" id="projectDeadline" />
+      <button onclick="addProject()">Create Project</button>
+    </div>
 
-      <div class="content-area">
-        <!-- Posts Grid -->
-        <section class="posts">
-          <div class="post-card">
-            <img src="https://thumbs.dreamstime.com/b/silhouette-plane-f…uette-plane-flying-beautiful-sunset-114024191.jpg" alt="Post 1">
-            <span class="category">Travel</span>
-            <h2>Discover Your Inner Genius To Better</h2>
-            <p>BY: ERWIN JONSON | MAR 23, 2021 | 62 VIEWS</p>
-            <p>Learn how to unlock your potential through guided learning...</p>
-          </div>
-          <div class="post-card">
-            <img src="https://miro.medium.com/v2/resize:fit:1200/1*jdDqOtbAhmdJ6DSXeH1iqg.jpeg" alt="Post 2">
-            <span class="category">Thinking</span>
-            <h2>Read This To Change How You Mind</h2>
-            <p>BY: ERWIN JONSON | MAR 23, 2021 | 51 VIEWS</p>
-            <p>Explore mental frameworks that improve focus and creativity.</p>
-          </div>
-          <div class="post-card">
-           <img src="https://geediting.com/wp-content/uploads/2024/06/highly-intelligent.png" alt="Post 3">
-
-            <span class="category">Thinking</span>
-            <h2>Smart People Think To Get Ahead</h2>
-            <p>BY: ERWIN JONSON | MAR 23, 2021 | 51 VIEWS</p>
-            <p>Critical thinking and smart work tips to boost career success.</p>
-          </div>
-          <div class="post-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSar-d4KecZ-_FHXTMUcBlCDQnQfFoVuyquxA&s" alt="Post 4">
-            <span class="category">Thinking</span>
-            <h2>One Simple Word To Success</h2>
-            <p>BY: ERWIN JONSON | MAR 23, 2021 | 45 VIEWS</p>
-            <p>Discover the one mindset shift that leads to big change.</p>
-          </div>
-        </section>
-
-        <!-- Right Sidebar -->
-        <aside class="rightbar">
-          <div class="popular-post">
-            <h3>Popular Posts</h3>
-            <div class="mini-post">
-              <img src="https://thumbs.dreamstime.com/b/silhouette-plane-f…uette-plane-flying-beautiful-sunset-114024191.jpg" alt="Popular">
-              <div>
-                <p>MAR 23, 2021</p>
-                <strong>Discover Your Inner Genius To Better</strong>
-              </div>
-            </div>
-          </div>
-
-          <div class="recent-posts">
-            <h3>Recent Posts</h3>
-            <ul>
-              <li>Discover Your Inner Genius To Better</li>
-              <li>Read This To Change How You Mind</li>
-              <li>Smart People Think To Get Ahead</li>
-              <li>One Simple Word To Success</li>
-              <li>How To Improve The Way You Skills</li>
-            </ul>
-          </div>
-
-          <div class="categories">
-            <h3>Categories</h3>
-            <ul>
-              <li>All (50)</li>
-              <li>Travel (12)</li>
-              <li>Lifestyle (20)</li>
-              <li>Thinking (18)</li>
-            </ul>
-          </div>
-        </aside>
-      </div>
-    </main>
+    <h2>📌 All Projects</h2>
+    <ul id="projectList"></ul>
   </div>
 
   <script src="script.js"></script>

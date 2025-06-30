@@ -3,104 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rajnandini | Portfolio</title>
+  <title>Basic Calculator</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="deleteChar()">⌫</button>
+      <button onclick="appendOperator('/')">÷</button>
+      <button onclick="appendOperator('*')">×</button>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <h1 class="logo">✨ Rajnandini</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <button onclick="appendNumber('7')">7</button>
+      <button onclick="appendNumber('8')">8</button>
+      <button onclick="appendNumber('9')">9</button>
+      <button onclick="appendOperator('-')">−</button>
+
+      <button onclick="appendNumber('4')">4</button>
+      <button onclick="appendNumber('5')">5</button>
+      <button onclick="appendNumber('6')">6</button>
+      <button onclick="appendOperator('+')">+</button>
+
+      <button onclick="appendNumber('1')">1</button>
+      <button onclick="appendNumber('2')">2</button>
+      <button onclick="appendNumber('3')">3</button>
+      <button onclick="calculateResult()">=</button>
+
+      <button onclick="appendNumber('0')" class="zero">0</button>
+      <button onclick="appendNumber('.')">.</button>
     </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container hero-content">
-      <div>
-        <h2>Hello, I'm</h2>
-        <h1>Rajnandini Singh</h1>
-        <p>A creative front-end web developer</p>
-      </div>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFZIovFSzlUhxhTJXQQJv5Op66_SyWAfFqJw&s" alt="Profile Image">
-    </div>
-  </section>
-
-  <!-- About -->
-  <section class="about" id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <img class="about-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgP6di4CvEDO4UDWofo1ep7CRxAvIEIT5F0w&s" alt="My Photo">
-      <p>I'm a beginner front-end developer passionate about building beautiful websites. I enjoy transforming creative ideas into real, responsive, and engaging web pages using HTML, CSS, and JavaScript.</p>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section class="skills" id="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul class="skill-list">
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript (Basic)</li>
-        <li>Responsive Design</li>
-        <li>Bootstrap</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section class="projects" id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-cards">
-        <div class="project-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Q9vuVEEvzMPd4eYBxytdC_T93kHVKfPefg&s" alt="Project 1">
-          <h4>Landing Page</h4>
-          <p>Responsive business landing page using HTML & CSS.</p>
-        </div>
-        <div class="project-card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ6cPy7KMlN-Luc_Kt3stkBFkwDLxn6pP3sA&s" alt="Project 2">
-          <h4>Portfolio Website</h4>
-          <p>Personal portfolio created using modern web design practices.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Resume -->
-  <section class="resume" id="resume">
-    <div class="container">
-      <h2>Resume</h2>
-      <p>Download my resume:</p>
-      <a href="resume.pdf" download class="btn">Download PDF</a>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: rajnandini@example.com</p>
-      <p>Phone: +91 1234567890</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Rajnandini Singh. All rights reserved.</p>
-  </footer>
-
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

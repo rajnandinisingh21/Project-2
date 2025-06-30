@@ -3,37 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Basic Calculator</title>
+  <title>Tribute to Swami Vivekananda</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="calculator">
-    <div class="display" id="display">0</div>
-    <div class="buttons">
-      <button onclick="clearDisplay()">C</button>
-      <button onclick="deleteChar()">⌫</button>
-      <button onclick="appendOperator('/')">÷</button>
-      <button onclick="appendOperator('*')">×</button>
 
-      <button onclick="appendNumber('7')">7</button>
-      <button onclick="appendNumber('8')">8</button>
-      <button onclick="appendNumber('9')">9</button>
-      <button onclick="appendOperator('-')">−</button>
+  <!-- Header -->
+  <header class="header">
+    <h1>Swami Vivekananda</h1>
+    <p>"Arise! Awake! and stop not until the goal is reached."</p>
+  </header>
 
-      <button onclick="appendNumber('4')">4</button>
-      <button onclick="appendNumber('5')">5</button>
-      <button onclick="appendNumber('6')">6</button>
-      <button onclick="appendOperator('+')">+</button>
-
-      <button onclick="appendNumber('1')">1</button>
-      <button onclick="appendNumber('2')">2</button>
-      <button onclick="appendNumber('3')">3</button>
-      <button onclick="calculateResult()">=</button>
-
-      <button onclick="appendNumber('0')" class="zero">0</button>
-      <button onclick="appendNumber('.')">.</button>
+  <!-- About Section -->
+  <section class="about">
+    <img src="https://i0.wp.com/vivekananda.live/eshop/wp-content/uploads/2022/02/021-SV.jpg?fit=432%2C576&ssl=1" alt="Swami Vivekananda">
+    <div class="about-text">
+      <h2>About</h2>
+      <p>
+        Swami Vivekananda was a lion-hearted monk, a messenger of Indian spirituality, and a torchbearer of universal wisdom. With his powerful words and fearless spirit, he awakened the soul of a nation and inspired the world to see the unity of all religions. A symbol of courage, compassion, and enlightenment, he taught us to “Arise, awake, and stop not till the goal is reached.”
+      </p>
     </div>
-  </div>
-  <script src="script.js"></script>
+  </section>
+
+  <!-- Qualities Section -->
+  <section class="qualities">
+    <h2>Admirable Qualities</h2>
+    <ul>
+      <li>🧠 Profound Spiritual Wisdom</li>
+      <li>🗣️ Powerful Oratory Skills</li>
+      <li>🌍 Visionary Thinker</li>
+      <li>🕊️ Advocate of Peace & Unity</li>
+      <li>🔥 Motivator of Youth</li>
+      <li>📚 Lifelong Learner</li>
+    </ul>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <div class="images">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6xtt5Ab5dbw_92HIpyfrar2sgUIy6AvNvoA&s" alt="Speech in Chicago">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhu4zzBhyzwutict_IBC-bvesb-dBDCWpP2w&s" alt="Portrait">
+      <img src="https://samsshopping.com/wp-content/uploads/2021/12/MC-178.jpg" alt="In Kolkata">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>In admiration of a great soul | &copy; 2025 Tribute by Rajnandini</p>
+  </footer>
+
 </body>
 </html>
